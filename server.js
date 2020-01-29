@@ -35,7 +35,8 @@ models.sequelize.sync({force: false }).then(function() {
     console.log(err, "Something went wrong with the Database Update!")
 });
 //add more routes
-var account  = require('./route/account.js')(app);
+//var account  = require('./route/account.js')(app);
+var plant  = require('./route/plant.js')(app);
 
 //run server
 app.listen(env.PORT, ()=> {
